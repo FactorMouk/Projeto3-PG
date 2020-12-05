@@ -1,0 +1,35 @@
+{
+  "name": "projeto3-pg",
+  "version": "1.0.0",
+  "description": "Projeto 3 da cadeira de Processamento Grafico",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FactorMouk/Projeto3-PG.git"
+  },
+  "author": "FactorMouk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FactorMouk/Projeto3-PG/issues"
+  },
+  "homepage": "https://github.com/FactorMouk/Projeto3-PG#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@types/p5": "^0.9.1",
+    "p5": "^1.1.9",
+    "parcel-bundler": "^1.12.4",
+    "rxjs": "^6.6.3"
+  }
+}

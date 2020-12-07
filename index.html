@@ -10,6 +10,67 @@
     <script src="src/scripts/index.ts"></script>
 </head>
 <body>
-    
+    <header>
+        <h2>Iluminação - Phong</h2>
+    </header>
+    <main>
+        <section id="insert-images-container">
+            <h3>Insira abaixo as texturas:</h3>
+            <div class="insert-cards">
+                <div>
+                    <h4>Cor Base</h4>
+                    <img src="src/assets/color-circle.png">
+                    <input type="file" id="base-color" name="base-color" accept="image/*">
+                </div>
+                <div>
+                    <h4>Mapa de Normal</h4>
+                    <img src="src/assets/rgb.png">
+                    <input type="file" id="normal-map" name="normal-map" accept="image/*">
+                </div>
+                <div>
+                    <h4>Mapa de Especular</h4>
+                    <img src="src/assets/reflective.png">
+                    <input type="file" id="specular-map" name="specular-map" accept="image/*">
+                </div>
+            </div>
+            <button id="generate-image-button">Gerar</button>
+        </section>
+        <hr>
+        <section id="generated-image-container">
+            <h3>Ajuste abaixo os parâmetros:</h3>
+            <div class="phong-parameters">
+                <div>
+                    <label>Apenas Difuso</label>
+                    <input type="checkbox" id="only-difuse" name="only-difuse">
+                </div>
+                <div>
+                    <label>Apenas Especular</label>
+                    <input type="checkbox" id="only-specular" name="only-specular">
+                </div>
+                <div>
+                    <label>Cor da Fonte de Luz</label>
+                    <div>
+                        <input type="number" id="red-light-color" name="red-light-color" min="0" max="255" value="255">
+                        <label>R</label>
+                    </div>
+                    <div>
+                        <input type="number" id="green-light-color" name="green-light-color" min="0" max="255" value="255">
+                        <label>G</label>
+                    </div>
+                    <div>
+                        <input type="number" id="blue-light-color" name="blue-light-color" min="0" max="255" value="255">
+                        <label>B</label>
+                    </div>
+                </div>
+                <div>
+                    <label>Intensidade da Fonte de Luz</label>
+                    <div>
+                        <input type="number" id="light-intensity-color" name="light-intensity-color" min="0" value="150">
+                    </div>
+                </div>
+            </div>
+            <div id="canvas-container"></div>
+        </section>
+    </main>
 </body>
 </html>
